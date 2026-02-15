@@ -122,3 +122,5 @@ alias n="nvim"
 alias hd="hexdump"
 # Created by `pipx` on 2025-10-02 08:07:42
 export PATH="$PATH:/home/dvd/.local/bin"
+
+[ -f "/home/dvd/.ghcup/env" ] && . "/home/dvd/.ghcup/env" # ghcup-env
