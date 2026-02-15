@@ -120,6 +120,11 @@ alias tr="trash-restore"
 alias te="trash-empty"
 alias n="nvim"
 alias hd="hexdump"
+alias sysen="sudo systemctl enable"
+alias sysenn="sudo systemctl enable --now"
+alias sysdi="sudo systemctl disable"
+alias sysin="sudo systemctl disable --now"
+
 # Created by `pipx` on 2025-10-02 08:07:42
 export PATH="$PATH:/home/dvd/.local/bin"
 
