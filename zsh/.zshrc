@@ -112,7 +112,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 alias zshconfig="nano ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
+alias open="xdg-open"
 alias rmf="/bin/rm" # borrar fr fr
 alias rm="trash-put"
 alias tl="trash-list | sort -r | column -t"
