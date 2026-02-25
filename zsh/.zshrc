@@ -79,9 +79,11 @@ plugins=(
 	kitty
 	mvn
 	thefuck
-	web-search
 	ssh-agent
 )
+
+# Plugins config
+zstyle :omz:plugins:ssh-agent identities gh gitlab gl github
 
 source $ZSH/oh-my-zsh.sh
 
@@ -130,7 +132,5 @@ alias sysres="sudo systemctl restart"
 # Created by `pipx` on 2025-10-02 08:07:42
 export PATH="$PATH:/home/dvd/.local/bin"
 
-# Plugins config
-zstyle :omz:plugins:ssh-agent identities gh
 
 [ -f "/home/dvd/.ghcup/env" ] && . "/home/dvd/.ghcup/env" # ghcup-env
