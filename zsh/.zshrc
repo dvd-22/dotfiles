@@ -133,4 +133,5 @@ alias sysres="sudo systemctl restart"
 export PATH="$PATH:/home/dvd/.local/bin"
 
 
+
 [ -f "/home/dvd/.ghcup/env" ] && . "/home/dvd/.ghcup/env" # ghcup-env
