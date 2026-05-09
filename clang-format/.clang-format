@@ -2,7 +2,6 @@ BasedOnStyle: LLVM
 IndentWidth: 4
 TabWidth: 4
 UseTab: Never
-BreakBeforeBraces: Allman
 BinPackArguments: false
 BinPackParameters: false
 BinPackLongBracedList: false
