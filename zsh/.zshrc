@@ -116,7 +116,7 @@ source $ZSH/oh-my-zsh.sh
 alias zshconfig="nano ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias open="xdg-open"
-alias rmf="/bin/rm" # borrar fr fr
+alias rmfr="/bin/rm" # borrar fr fr
 alias rm="trash-put"
 alias tl="trash-list | sort -r | column -t"
 alias tr="trash-restore"
@@ -128,6 +128,7 @@ alias sysenn="sudo systemctl enable --now"
 alias sysdi="sudo systemctl disable"
 alias sysin="sudo systemctl disable --now"
 alias sysres="sudo systemctl restart"
+alias gpp='make -f ~/Escuela/pu++/cses/Makefile'
 
 # Created by `pipx` on 2025-10-02 08:07:42
 export PATH="$PATH:/home/dvd/.local/bin"
