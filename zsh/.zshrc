@@ -101,6 +101,15 @@ if [[ -n $SSH_CONNECTION ]]; then
    export EDITOR='nvim'
  fi
 
+ # para usar q con yazi y quedarme en el cwd
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	command yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ "$cwd" != "$PWD" ] && [ -d "$cwd" ] && builtin cd -- "$cwd"
+	command rm -f -- "$tmp"
+}
+
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
 
@@ -111,10 +120,8 @@ if [[ -n $SSH_CONNECTION ]]; then
 # - $ZSH_CUSTOM/aliases.zsh
 # - $ZSH_CUSTOM/macos.zsh
 # For a full list of active aliases, run `alias`.
-#
-# Example aliases
-alias zshconfig="vim ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+# LOS PUSE AQUI PARA PODER TENERLOS EN LOS DOTFILES
+alias zshconfig="nvim ~/.zshrc"
 alias open="xdg-open"
 alias rmfr="/bin/rm" # borrar fr fr
 alias rm="trash-put"
@@ -122,7 +129,6 @@ alias tl="trash-list | sort -r | column -t"
 alias tr="trash-restore"
 alias te="trash-empty"
 alias n="nvim"
-alias y="yazi"
 alias hd="hexdump"
 alias sysen="sudo systemctl enable"
 alias sysenn="sudo systemctl enable --now"
@@ -131,6 +137,8 @@ alias sysin="sudo systemctl disable --now"
 alias sysres="sudo systemctl restart"
 
 alias gpp='make -f ~/.cses/Makefile'
+
+
 
 # Created by `pipx` on 2025-10-02 08:07:42
 export PATH="$PATH:/home/dvd/.local/bin"

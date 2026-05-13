@@ -1,0 +1,34 @@
+{
+    "competitive": {
+        "prefix": "comp",
+        "body": [
+            "#include <bits/stdc++.h>",
+            "using namespace std;",
+            "",
+            "#define FAST_IO                                                                \\",
+            "ios::sync_with_stdio(false);                                                 \\",
+            "cin.tie(nullptr);",
+            "",
+            "using ll = long long;",
+            "using ull = unsigned long long;",
+            "using pii = pair<int, int>;",
+            "using vi = vector<int>;",
+            "using vll = vector<ll>;",
+            "",
+            "const int INF = 1e9 + 7;",
+            "const ll LINF = 1e18;",
+            "",
+            "#define dbg(x) cerr << #x << \" = \" << (x) << endl;",
+            "",
+            "int main() {",
+            "   FAST_IO",
+            "   int t = 1;",
+            "   // cin >> t; // Uncomment if multiple test cases",
+            "   while (t--) {",
+            "       ${1}",
+            "   }",
+            "   return 0;",
+            "}"
+        ]
+    }
+}
