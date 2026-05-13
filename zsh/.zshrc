@@ -95,11 +95,11 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='nvim'
-# fi
+if [[ -n $SSH_CONNECTION ]]; then
+   export EDITOR='vim'
+ else
+   export EDITOR='nvim'
+ fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
@@ -113,7 +113,7 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconfig="nano ~/.zshrc"
+alias zshconfig="vim ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias open="xdg-open"
 alias rmfr="/bin/rm" # borrar fr fr
@@ -122,6 +122,7 @@ alias tl="trash-list | sort -r | column -t"
 alias tr="trash-restore"
 alias te="trash-empty"
 alias n="nvim"
+alias y="yazi"
 alias hd="hexdump"
 alias sysen="sudo systemctl enable"
 alias sysenn="sudo systemctl enable --now"
@@ -133,7 +134,5 @@ alias gpp='make -f ~/.cses/Makefile'
 
 # Created by `pipx` on 2025-10-02 08:07:42
 export PATH="$PATH:/home/dvd/.local/bin"
-
-
 
 [ -f "/home/dvd/.ghcup/env" ] && . "/home/dvd/.ghcup/env" # ghcup-env
