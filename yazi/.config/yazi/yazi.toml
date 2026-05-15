@@ -1,0 +1,11 @@
+[opener]
+xdg_system = [
+   { run = 'xdg-open "$@"', orphan = true, desc = "System Default", for = "linux" }
+]
+
+[open]
+prepend_rules = [
+    { url = "*.circ", use = [ "xdg_system", "edit", "reveal" ] }
+]
+
+
