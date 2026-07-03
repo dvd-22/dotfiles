@@ -136,10 +136,6 @@ alias sysdi="sudo systemctl disable"
 alias sysin="sudo systemctl disable --now"
 alias sysres="sudo systemctl restart"
 
-alias gpp='make -f ~/.cses/Makefile'
-
-
-
 # Created by `pipx` on 2025-10-02 08:07:42
 export PATH="$PATH:/home/dvd/.local/bin"
 
