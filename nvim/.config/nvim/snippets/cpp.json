@@ -1,6 +1,6 @@
 {
     "competitive": {
-        "prefix": "comp",
+        "prefix": "cp",
         "body": [
             "#include <bits/stdc++.h>",
             "using namespace std;",
@@ -15,8 +15,8 @@
             "using vi = vector<int>;",
             "using vll = vector<ll>;",
             "",
-            "const int INF = 1e9 + 7;",
-            "const ll LINF = 1e18;",
+            "const int MOD = 1e9 + 7;",
+            "const ll LMOD = 1e18;",
             "",
             "#define dbg(x) cerr << #x << \" = \" << (x) << endl;",
             "",
