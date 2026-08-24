@@ -40,6 +40,7 @@ return {
             { "<localleader>lt", "<cmd>VimtexTocToggle<cr>", desc = "Toggle TOC", ft = "tex" },
             { "<localleader>le", "<cmd>VimtexErrors<cr>", desc = "Show errors", ft = "tex" },
             { "<localleader>ls", "<cmd>VimtexStop<cr>", desc = "Stop compilation", ft = "tex" },
+            { "<localleader>lw", "<cmd>VimtexCountWords<cr>", desc = "Word count", ft = "tex" },
         },
     },
 
