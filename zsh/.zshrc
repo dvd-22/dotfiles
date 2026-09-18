@@ -140,3 +140,12 @@ alias sysres="sudo systemctl restart"
 export PATH="$PATH:/home/dvd/.local/bin"
 
 [ -f "/home/dvd/.ghcup/env" ] && . "/home/dvd/.ghcup/env" # ghcup-env
+
+
+# BEGIN opam configuration
+# This is useful if you're using opam as it adds:
+#   - the correct directories to the PATH
+#   - auto-completion for the opam binary
+# This section can be safely removed at any time if needed.
+[[ ! -r '/home/dvd/.opam/opam-init/init.zsh' ]] || source '/home/dvd/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
+# END opam configuration
