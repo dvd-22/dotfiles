@@ -122,7 +122,7 @@ function y() {
 # For a full list of active aliases, run `alias`.
 # LOS PUSE AQUI PARA PODER TENERLOS EN LOS DOTFILES
 alias zshconfig="nvim ~/.zshrc"
-alias open="xdg-open"
+alias o="xdg-open"
 alias rmfr="/bin/rm" # borrar fr fr
 alias rm="trash-put"
 alias tl="trash-list | sort -r | column -t"
@@ -140,3 +140,7 @@ alias sysres="sudo systemctl restart"
 export PATH="$PATH:/home/dvd/.local/bin"
 
 [ -f "/home/dvd/.ghcup/env" ] && . "/home/dvd/.ghcup/env" # ghcup-env
+
+
+# Added by Antigravity CLI installer
+export PATH="/home/dvd/.local/bin:$PATH"
