@@ -1,5 +1,15 @@
 If:
-  PathMatch: .*\.(cpp|cxx|cc|hpp|hxx|h)$
+  PathMatch: .*\.(cpp|cxx|cc|hpp|hxx)$
 CompileFlags:
   Add: [-std=c++20]
+---
+If:
+  PathMatch: .*/src/.*\.c
+CompileFlags:
+  Add: [-I../include, -std=c11]
+---
+If:
+  PathMatch: .*/tests/.*\.c
+CompileFlags:
+  Add: [-I../include, -std=c11]
 
